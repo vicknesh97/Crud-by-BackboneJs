@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <title>Crud By Backbone</title>
+</head>
+<body>
+    <div class="container">
+     <h1>CRUD By Backbone js</h1>
+     <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>City</th>
+                <th>Action</th>
+           </tr>
+           <tr>
+            <td><input class="form-control name-input"></td>
+            <td><input class="form-control email-input"></td>
+            <td><input class="form-control city-input"></td>
+            <td><button class="btn btn-primary add-detail">Add</button></td>
+           </tr>
+        </thead>
+        <tbody class="details-list"></tbody>
+     </table>
+    </div>
+
+    <script type="text/template" class="details-list-template">
+        <td><span class="name"><%= name %></span></td>
+        <td><span class="email"><%= email %></span></td>
+        <td><span class="city"><%= city %></span></td>
+        <td><button class="btn btn-warning edit-detail">Edit</button> <button class="btn btn-danger delete-detail">Delete</button><button class="btn btn-success update-detail" style="display:none">Update</button>  <button class="btn btn-danger cancel" style="display:none">Cancel</button></td>
+    </script>
+    <script src="js/jquery-min.js"></script>
+    <script src="js/underscore-min.js"></script>
+    <script src="js/backbone-min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="test.js"></script>
+</body>
+</html>
